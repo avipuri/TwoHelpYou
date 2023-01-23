@@ -1,0 +1,245 @@
+/******************************************************************************
+ * Class: CSC 0648-03 Software Engineering Fall 2021
+ * Team: 1
+ * Name:  Justin Lam
+ *        Aviral Puri
+ *        Dinesh Thapa
+ *        Kurt D Resayo
+ *        Wesley J Xu
+ *        Chung Hei Fong
+ *
+ * File: color_book.css
+ * 
+ * Description: Provides the styling for most the pages specfically 
+ *				the style used on the home page, headers, and footers
+ *				to create a sense of uniformity across all pages
+ *****************************************************************************/
+
+/* whole page */
+body {
+	font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-align: center;
+	color: #565656;
+	background-color: #fff;
+}
+
+.grid_container {
+	display: grid;
+	grid-template-columns: 1fr 8fr 1fr;
+	grid-template-rows: 1fr auto;
+	margin: 0;
+}
+
+/* main site content */
+.body {
+	grid-column: 2;
+}
+
+.left_align_content {
+	text-align: left;
+}
+
+/* Flash Message */
+#flash_message {
+	position: fixed;
+    left: 50%;
+    top: 20%;
+	padding: 10px;
+    transform: translate(-50%,0);
+	border: solid;
+	background-color: white;
+	border-radius: 25%;
+}
+
+#flash_message div {
+    text-align: center;
+}
+
+.flash_error {
+    border-color: red !important;
+    color: red !important;
+}
+
+.flash_success {
+    border-color: green !important;
+    color: green !important;
+}
+
+/* Buttons and links */
+button:hover {
+	color: initial;
+	text-decoration: none;
+	background-color: goldenrod;
+	color: black;
+}
+
+.navbar-button {
+    text-decoration: none;
+    background-color: #310944;
+    color: white;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+    margin: 4px;
+    border-radius: 20%;
+    border: none;
+    cursor: pointer;
+    /* max-width: 25%; */
+    opacity: 0.9;
+}
+
+.navbar-button:hover {
+	opacity:1;
+	color: white;
+	background-color: black;
+}
+
+.about_button {
+	color: #310944;
+	border: none;
+	padding: .5%;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: normal;
+	font-weight: bold;
+	background: grey;
+	transition-duration: 0.4s;
+	text-decoration:none
+}
+
+.about_button:hover {
+	background-color: yellow;
+	color: white;
+}
+
+/* #search_button {
+    background: #186295;
+  } */
+
+/* Card/Search Results */
+.card_body {
+	padding: 1%;
+	margin: 2%;
+	margin-bottom: 1%;
+	border-radius: 10px;
+	border: 1px groove grey;
+	display: grid;
+	grid-template-columns: auto 150px 150px auto;
+}
+
+.card_left_item {
+	grid-column-start: 2;
+	grid-column-end: 3;
+	text-align: left;
+}
+
+.card_right_item {
+	grid-column-start: 3;
+	grid-column-end: 4;
+	margin-right: 10%;
+	text-align: right;
+}
+
+.card_cross_row {
+	grid-column-start: 2;
+	grid-column-end: 4;
+}
+
+.card_text {
+	text-align: left;
+}
+
+#main_content {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-auto-rows: auto;
+	justify-content: center;
+}
+
+.card_button {
+	color: #310944;
+	border-radius: 20%;
+	border: 1px groove gold;
+	padding: 1%;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: normal;
+	font-weight: bold;
+	background: white;
+	transition-duration: 0.4s;
+	text-decoration:none;
+}
+
+.side_bar {
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+
+form i {
+    margin-left: -30px;
+    cursor: pointer;
+}
+
+.container {
+	padding: 16px;
+}
+
+input[type=text], input[type=password], input[type = email] {
+	/* width: 25%; */
+	padding: 15px;
+	margin: 5px 0 22px 0;
+	display: inline-block;
+	border: none;
+	background: #f1f1f1;
+}
+
+.custom_button_2 {
+	background-color: #310944;
+	color: white;
+	padding: 16px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	/* max-width: 25%; */
+	opacity: 0.9;
+	text-decoration:none
+}
+
+.custom_button_2:hover {
+	opacity:1;
+	color: black;
+	background-color: goldenrod;
+}
+
+.registration_body {
+	font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-align: left;
+	color: #565656;
+	background-color: #fff;
+	margin-left: 815px;
+}
+
+.legal_link {
+	text-decoration: none;
+	border: 1px groove #310944;
+	border-radius: 20%;
+	color: #310944
+}
+
+.legal_link:hover {
+	background-color: gold;
+}
+
+/* title css */
+#title {
+	font-size: 20px;
+	font-weight: bold;
+	color: gold;
+	text-align: center;
+	padding: 2%;
+	/* background color */
+	background-color: #310944;
+}

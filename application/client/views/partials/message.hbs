@@ -1,0 +1,31 @@
+{{!-- *************************************************************************
+ * Class: CSC 0648-03 Software Engineering Fall 2021
+ * Team: 1
+ * Name:  Justin Lam
+ *        Aviral Puri
+ *        Dinesh Thapa
+ *        Kurt D Resayo
+ *        Wesley J Xu
+ *        Chung Hei Fong
+ * 
+ * File: message.hbs
+ * 
+ * Description: card partials tof user messages
+ ************************************************************************* --}}
+
+<head>
+    <link rel='stylesheet' type="text/css" href='/stylesheets/from_message.css' />
+</head>
+
+<section class="card_body from_message" id="message_{{message_id}}">
+        <div class="from_user">
+                <b>From: </b>
+                <a class="user_atag" href="/users/{{username}}" class="card_title">{{username}}</a>
+        </div>
+        <div class="date_messaged_div">
+                <span class="date_messaged" id="messaged_date">{{time}}</span>
+        </div>
+        <div class="message_content">
+                <p>{{message}}</p>
+        </div>
+</section>

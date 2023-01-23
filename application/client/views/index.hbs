@@ -1,0 +1,23 @@
+{{!-- *************************************************************************
+ * Class: CSC 0648-03 Software Engineering Fall 2021
+ * Team: 1
+ * Name:  Justin Lam
+ *        Aviral Puri
+ *        Dinesh Thapa
+ *        Kurt D Resayo
+ *        Wesley J Xu
+ *        Chung Hei Fong
+ * 
+ * File: index.hbs
+ * 
+ * Description: html body for home page
+ ************************************************************************* --}}
+
+<div id="title" class="body" >TwoHelpYou mission is to provide SFSU students past and present with the resources and opportunity to tutor and find tutors to help them excel.</div>
+
+<div id = "main_content" class="body">
+    <div class="side_bar" id="post_number"> </div>
+    {{#each cards}}
+        {{> card this}}
+    {{/each}}
+</div>

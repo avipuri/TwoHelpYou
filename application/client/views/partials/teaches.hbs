@@ -1,0 +1,27 @@
+{{!-- *************************************************************************
+ * Class: CSC 0648-03 Software Engineering Fall 2021
+ * Team: 1
+ * Name:  Justin Lam
+ *        Aviral Puri
+ *        Dinesh Thapa
+ *        Kurt D Resayo
+ *        Wesley J Xu
+ *        Chung Hei Fong
+ * 
+ * File: teaches.hbs
+ * 
+ * Description: card partials that takes input to
+ *              generate the posts the users post
+ ************************************************************************* --}}
+
+<section class="card_body" id="post_{{post_id}}">
+        <p class="card_title card_left_item"> <b>Course:</b> {{course_prefix}} {{course_postfix}}</p>
+        <p class="card_right_item">
+                <a href="/message/{{username}}/{{post_id}}/{{course_prefix}}/{{course_postfix}}"><button class="card_button">Contact {{username}}</button></a>
+        </p>
+        <div class="card_text card_cross_row">
+                <p><b>Avaliability:</b></p>
+                <p>{{availability}}</p>
+        </div> 
+
+</section>

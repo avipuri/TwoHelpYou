@@ -1,0 +1,22 @@
+{{!-- *************************************************************************
+ * Class: CSC 0648-03 Software Engineering Fall 2021
+ * Team: 1
+ * Name:  Justin Lam
+ *        Aviral Puri
+ *        Dinesh Thapa
+ *        Kurt D Resayo
+ *        Wesley J Xu
+ *        Chung Hei Fong
+ * 
+ * File: search_results.hbs
+ * 
+ * Description: search results page, mirrors the original landing page
+ ************************************************************************* --}}
+
+<div id = "main_content" class="body">
+    <div class="side_bar"><h2>Showing results for: {{prefix}} {{postfix}}</h2></div>
+    <div class="side_bar"><div id="post_number"> </div>{{message}}</div>
+    {{#each cards}}
+        {{> card this}}
+    {{/each}}
+</div>

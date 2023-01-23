@@ -1,0 +1,50 @@
+{{!-- *************************************************************************
+ * Class: CSC 0648-03 Software Engineering Fall 2021
+ * Team: 1
+ * Name:  Justin Lam
+ *        Aviral Puri
+ *        Dinesh Thapa
+ *        Kurt D Resayo
+ *        Wesley J Xu
+ *        Chung Hei Fong
+ * 
+ * File: login.hbs
+ * 
+ * Description: temporary page for logins
+ ************************************************************************* --}}
+
+<head>
+    <script defer type="text/javascript" src="/js/login.js"  ></script>
+    <link rel='stylesheet' type="text/css" href='/stylesheets/login.css' />
+</head>
+
+<div class="body">
+    <form class="requires-validation login_box" novalidate id="login_page" method="POST" action="/users/login"
+        enctype="application/x-www-form-urlencoded" >
+        <h2>Login</h2>
+        <div class="login_input_1">
+            <div>
+                <label for="user_name">Username: <div> <label id="login_user_message" class="small">Username must be 3 or more characters </label> </div></label>
+                <input class="login_input_2" type="text" name="user_name" id="user_name" required placeholder="Username" minlength="3"/>
+            </div>
+            <div>
+                <label for="password">Password: <div> <label id="login_password_message" class="small">Password must contain 8 or more characters,<br> uppercase, lowercase, number and a special character</label> </div> </label>
+                <input class="login_input_2" type="password" name="password" id="password" required placeholder="Password" minlength="8"/>
+            </div>
+        </div>
+        <div class="send_cancel">
+            <div>
+                <button class="modal_button_1" id="login_button" type="submit" value="login" name="Login">Login</button>
+            </div>
+            <div>
+                <button class="modal_button_1" id="cancel_login" type="reset" value="cancel" name="Cancel">Cancel</button>
+            </div>
+        </div>
+        <div class = "container">
+            <p>
+                Do not have an account yet? Click here to
+                <a href="../register">Register</a>!
+            </p>
+        </div>
+    </form>
+</div>
